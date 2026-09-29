@@ -1,0 +1,7 @@
+<!-- Centralized Wazuh configuration used for agent 001. -->
+<!-- The files and client identifiers in this path are fictional. -->
+<agent_config os="Linux">
+  <syscheck>
+    <directories check_all="yes" realtime="yes" report_changes="yes">/mnt/hgfs/codex_lab/client_records</directories>
+  </syscheck>
+</agent_config>

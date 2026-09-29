@@ -1,0 +1,13 @@
+
+verify-agent-conf: Verifying [etc/shared/default/agent.conf]
+verify-agent-conf: OK
+
+FIM_SHARED_PATH_CONFIGURED=yes
+CONFIG_PATH=/var/ossec/etc/shared/default/agent.conf
+MONITORED_PATH=/mnt/hgfs/codex_lab/client_records
+VALIDATED_AT=2026-09-29T01:19:22+00:00
+/var/ossec/framework/python/lib/python3.10/site-packages/connexion/apps/abstract.py:9: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient
+Groups (1):
+  default (1)
+Unassigned agents: 0.

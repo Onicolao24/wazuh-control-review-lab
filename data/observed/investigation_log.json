@@ -1,0 +1,31 @@
+{
+  "investigations": [
+    {
+      "change_id": "LAB-CHG-001",
+      "classification": "authorized_control_test",
+      "conclusion": "The content diff and before/after hashes match the planned change to the fictional account review file. No malicious intent or unauthorized user was established.",
+      "event_ref": {
+        "path": "/mnt/hgfs/codex_lab/client_records/account_review_FA-1001.txt",
+        "rule_id": "550",
+        "timestamp": "2026-09-29T01:31:43.693+0000"
+      },
+      "id": "INV-FIM-001",
+      "status": "closed"
+    }
+  ],
+  "pending_items": [
+    {
+      "category": "lab_design",
+      "description": "Repeat the FIM test on a local endpoint directory to assess real-time notification without a VMware shared filesystem.",
+      "id": "FOLLOW-UP-001",
+      "status": "pending"
+    },
+    {
+      "category": "sca_triage",
+      "description": "Prioritize and validate the remaining failed SCA checks before recommending additional changes.",
+      "id": "FOLLOW-UP-002",
+      "status": "pending"
+    }
+  ],
+  "schema_version": 1
+}

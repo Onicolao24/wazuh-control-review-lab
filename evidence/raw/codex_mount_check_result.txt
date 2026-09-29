@@ -1,0 +1,9 @@
+2026/09/29 01:24:12 sca: WARNING: File 'etc/shared/codex_mount_check.yml' not found.
+
+verify-agent-conf: Verifying [etc/shared/default/agent.conf]
+verify-agent-conf: OK
+
+DEPLOYED_AT=2026-09-29T01:24:12+00:00
+POLICY=/var/ossec/etc/shared/default/codex_mount_check.yml
+MOUNT_CHECK={"condition": "all", "id": 100001, "policy_id": "codex_lab_mount_check", "reason": "", "result": "passed", "title": "Fictional client records directory is available"}
+RESULT_AVAILABLE_AT=2026-09-29T01:25:43+00:00

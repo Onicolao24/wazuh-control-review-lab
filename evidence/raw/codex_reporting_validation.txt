@@ -1,0 +1,23 @@
+REPORTING_VALIDATION_DATE=2026-09-29
+VALIDATION_HOST=wazuhserver
+PYTHON_VERSION=Python 3.12.3
+
+GENERATOR_COMMAND=python3 scripts/generate_metrics.py
+GENERATOR_EXIT=0
+GENERATOR_OUTPUT=Generated metrics: detected=1, investigated=1, corrected=1, pending_sca=117
+
+TEST_COMMAND=python3 -m unittest discover -s tests -v
+TESTS_RUN=2
+TEST_RESULT=OK
+TEST_1=test_observed_lab_metrics
+TEST_1_RESULT=ok
+TEST_2=test_rejects_mismatched_fim_before_hash
+TEST_2_RESULT=ok
+
+SAMPLE_BASELINE_ACCOUNT_SHA256=66ac583a7a6e55591ece297c7d80c5e5b689611cd5bc15c700304ebb0df2e2fa
+SAMPLE_AFTER_CHANGE_ACCOUNT_SHA256=d3b144238acc5e68321412d873326ac008c7649063ef9fb18ff4b7cd24d81faf
+SAMPLE_PROFILE_SHA256=d43b53b1765ec004a65e499016d2bb5509fe5b5712eca1c4a2034b925bf9ec67
+SAMPLE_HASHES_MATCH_EXPORTED_FIM_EVIDENCE=true
+
+FINAL_SERVICE_CHECK=wazuh-manager active; wazuh-indexer active; wazuh-dashboard active
+DASHBOARD_HTTPS_PORT_443_REACHABLE_FROM_HOST=true

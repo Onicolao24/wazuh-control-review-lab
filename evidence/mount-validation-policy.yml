@@ -1,0 +1,16 @@
+policy:
+  id: "codex_lab_mount_check"
+  file: "codex_mount_check.yml"
+  name: "Codex lab shared path validation"
+  description: "Validates that the fictional client records are visible on the Kali endpoint."
+
+checks:
+  - id: 100001
+    title: "Fictional client records directory is available"
+    description: "Checks the endpoint path used by this lab without executing remote commands."
+    rationale: "The FIM target must exist on the endpoint before the agent starts monitoring it."
+    remediation: "Mount the dedicated VMware shared folder or use a local endpoint directory."
+    condition: all
+    rules:
+      - 'd:/mnt/hgfs/codex_lab/client_records'
+      - 'f:/mnt/hgfs/codex_lab/client_records/client_profile_FA-1001.txt'

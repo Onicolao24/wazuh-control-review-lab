@@ -1,0 +1,61 @@
+{
+  "after": {
+    "captured_at": "2026-09-29T01:36:26.241274+00:00",
+    "check": {
+      "command": "stat /etc/crontab",
+      "condition": "all",
+      "file": null,
+      "id": 35594,
+      "policy_id": "cis_ubuntu24-04",
+      "reason": "",
+      "remediation": "- IF - cron is installed on the system: Run the following commands to set ownership and permissions on /etc/crontab: # chown root:root /etc/crontab # chmod og-rwx /etc/crontab.",
+      "result": "passed",
+      "scan_id": 1899906561,
+      "title": "Ensure permissions on /etc/crontab are configured."
+    },
+    "scan": {
+      "end_scan": 1790645729,
+      "fail": 117,
+      "hash": "bfe67df562dc530bcd53b98de9fbd6a971a4228a8bd0d7c60b8ee3eb3c59decf",
+      "id": 1899906561,
+      "invalid": 42,
+      "pass": 120,
+      "policy_id": "cis_ubuntu24-04",
+      "score": 50,
+      "start_scan": 1790645729,
+      "total_checks": 279
+    }
+  },
+  "before": {
+    "captured_at": "2026-09-29T01:34:49.770386+00:00",
+    "check": {
+      "command": "stat /etc/crontab",
+      "condition": "all",
+      "file": null,
+      "id": 35594,
+      "policy_id": "cis_ubuntu24-04",
+      "reason": "",
+      "remediation": "- IF - cron is installed on the system: Run the following commands to set ownership and permissions on /etc/crontab: # chown root:root /etc/crontab # chmod og-rwx /etc/crontab.",
+      "result": "failed",
+      "scan_id": 2105747575,
+      "title": "Ensure permissions on /etc/crontab are configured."
+    },
+    "scan": {
+      "end_scan": 1790641405,
+      "fail": 118,
+      "hash": "7053c4e311172181be5e6e9a41c673b5209143cb5ebfd8e76961f6c8f80a13aa",
+      "id": 1931049038,
+      "invalid": 42,
+      "pass": 119,
+      "policy_id": "cis_ubuntu24-04",
+      "score": 50,
+      "start_scan": 1790641405,
+      "total_checks": 279
+    }
+  },
+  "change": "Restricted /etc/crontab from mode 0644 to 0600; ownership remained root:root.",
+  "check_id": 35594,
+  "control": "SCA",
+  "rollback": "chmod 0644 /etc/crontab",
+  "verified_passed": true
+}

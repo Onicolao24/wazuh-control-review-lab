@@ -1,0 +1,5 @@
+MOCK DATA ONLY
+Client ID: FA-1001
+Account type: Advisory simulation
+Review status: Follow-up required
+Change ticket: LAB-CHG-001

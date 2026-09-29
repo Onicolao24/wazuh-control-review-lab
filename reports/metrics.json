@@ -1,0 +1,38 @@
+{
+  "evidence_through": "2026-09-29T01:36:26.241274+00:00",
+  "fim": {
+    "baseline_files": 2,
+    "controlled_change_id": "LAB-CHG-001",
+    "detected_events": 1,
+    "hash_chains_validated": 1,
+    "investigated_events": 1,
+    "investigation_coverage_percent": 100.0,
+    "modification_events": 1,
+    "scan_triggered": true,
+    "scheduled_events": 1
+  },
+  "pending": {
+    "documented_follow_up_items": 2,
+    "sca_failed_checks": 117,
+    "sca_invalid_checks": 42
+  },
+  "sca": {
+    "check_id": 35594,
+    "check_title": "Ensure permissions on /etc/crontab are configured.",
+    "failed_after": 117,
+    "failed_before": 118,
+    "findings_corrected": 1,
+    "invalid_after": 42,
+    "passed_after": 120,
+    "passed_before": 119,
+    "score_after": 50,
+    "score_before": 50,
+    "verified_passed": true
+  },
+  "sources": [
+    "codex_fim_baseline.json",
+    "codex_fim_change_alerts.json",
+    "codex_sca_before_after.json",
+    "investigation_log.json"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "agent": {
+    "id": "001",
+    "name": "kali-linux"
+  },
+  "captured_at": "2026-09-29T01:28:13.850446+00:00",
+  "files": [
+    {
+      "changes": 1,
+      "date": 1790644778,
+      "full_path": "/mnt/hgfs/codex_lab/client_records/account_review_FA-1001.txt",
+      "gid": "0",
+      "gname": "root",
+      "inode": 4,
+      "md5": "f2939592491f7086b70bf114fd24fdcc",
+      "mtime": 1790644617,
+      "perm": "rwxrwxrwx",
+      "sha1": "593ea85b0d58f1abeabd1837af48636153108a58",
+      "sha256": "66ac583a7a6e55591ece297c7d80c5e5b689611cd5bc15c700304ebb0df2e2fa",
+      "size": 101,
+      "type": "file",
+      "uid": "0",
+      "uname": "root"
+    },
+    {
+      "changes": 1,
+      "date": 1790644778,
+      "full_path": "/mnt/hgfs/codex_lab/client_records/client_profile_FA-1001.txt",
+      "gid": "0",
+      "gname": "root",
+      "inode": 5,
+      "md5": "11806e7a2fb3f32aff98bf289fad9e8e",
+      "mtime": 1790644614,
+      "perm": "rwxrwxrwx",
+      "sha1": "28148bac1db03794817ef7625ab6550231a51eb1",
+      "sha256": "d43b53b1765ec004a65e499016d2bb5509fe5b5712eca1c4a2034b925bf9ec67",
+      "size": 93,
+      "type": "file",
+      "uid": "0",
+      "uname": "root"
+    }
+  ],
+  "monitored_path": "/mnt/hgfs/codex_lab/client_records"
+}

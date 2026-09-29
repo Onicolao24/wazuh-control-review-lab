@@ -1,0 +1,5 @@
+# One-Minute Interview Pitch
+
+I built a small control review in an isolated Wazuh lab to practice the full cycle from testing through communication. First, I confirmed the existing Wazuh server and endpoint agent were healthy. I configured file integrity monitoring for two fictional client records, captured a baseline, and made one planned content change. Wazuh detected it in a scheduled scan and recorded the path, timestamp, before and after hashes, and exact diff. I investigated the alert and classified it as an authorized test, not an attack.
+
+For configuration security, I reviewed the Ubuntu SCA results and corrected one real finding by restricting `/etc/crontab` from mode 0644 to 0600. A new assessment changed that check from failed to passed. Finally, I wrote a Python script that validates the exported evidence and reports detected, investigated, corrected, and pending items separately. The project taught me to test controls, verify remediation, track honest metrics, and explain risk without overstating what the tools proved.

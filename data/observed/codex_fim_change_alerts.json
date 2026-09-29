@@ -1,0 +1,60 @@
+{
+  "alerts": [
+    {
+      "agent": {
+        "id": "001",
+        "ip": "192.168.150.128",
+        "name": "kali-linux"
+      },
+      "rule": {
+        "description": "Integrity checksum changed.",
+        "groups": [
+          "ossec",
+          "syscheck",
+          "syscheck_entry_modified",
+          "syscheck_file"
+        ],
+        "id": "550",
+        "level": 7
+      },
+      "syscheck": {
+        "diff": "4c4,5\n< Review status: Baseline approved\n---\n> Review status: Follow-up required\n> Change ticket: LAB-CHG-001\n",
+        "event": "modified",
+        "gid_after": "0",
+        "md5_after": "f46aea66ce629d5a8305b8e6d3541028",
+        "md5_before": "f2939592491f7086b70bf114fd24fdcc",
+        "mode": "scheduled",
+        "path": "/mnt/hgfs/codex_lab/client_records/account_review_FA-1001.txt",
+        "perm_after": "rwxrwxrwx",
+        "sha1_after": "f35c78f1249af0cbe23703fea18960c0bd44f9fa",
+        "sha1_before": "593ea85b0d58f1abeabd1837af48636153108a58",
+        "sha256_after": "d3b144238acc5e68321412d873326ac008c7649063ef9fb18ff4b7cd24d81faf",
+        "sha256_before": "66ac583a7a6e55591ece297c7d80c5e5b689611cd5bc15c700304ebb0df2e2fa",
+        "size_after": "129",
+        "size_before": "101",
+        "uid_after": "0"
+      },
+      "timestamp": "2026-09-29T01:31:43.693+0000"
+    }
+  ],
+  "collected_at": "2026-09-29T01:31:49.799724+00:00",
+  "controlled_change": "LAB-CHG-001",
+  "current_inventory": {
+    "changes": 1,
+    "date": 1790644778,
+    "full_path": "/mnt/hgfs/codex_lab/client_records/account_review_FA-1001.txt",
+    "gid": "0",
+    "gname": "root",
+    "inode": 4,
+    "md5": "f2939592491f7086b70bf114fd24fdcc",
+    "mtime": 1790644617,
+    "perm": "rwxrwxrwx",
+    "sha1": "593ea85b0d58f1abeabd1837af48636153108a58",
+    "sha256": "66ac583a7a6e55591ece297c7d80c5e5b689611cd5bc15c700304ebb0df2e2fa",
+    "size": 101,
+    "type": "file",
+    "uid": "0",
+    "uname": "root"
+  },
+  "scan_triggered": true
+}

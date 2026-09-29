@@ -1,0 +1,166 @@
+=== INSPECTION TIME ===
+2026-09-29T01:07:57+00:00
+=== WAZUH VERSION ===
+WAZUH_VERSION="v4.14.7"
+WAZUH_REVISION="rc1"
+WAZUH_TYPE="server"
+=== SERVICE STATE ===
+Id=wazuh-manager.service
+ActiveState=active
+SubState=running
+UnitFileState=enabled
+
+Id=wazuh-indexer.service
+ActiveState=active
+SubState=running
+UnitFileState=enabled
+
+Id=wazuh-dashboard.service
+ActiveState=active
+SubState=running
+UnitFileState=enabled
+=== CONNECTED AGENTS ===
+
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: wazuhserver (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: kali-linux, IP: any, Active
+
+=== ALL AGENTS ===
+
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: wazuhserver (server), IP: 127.0.0.1, Active/Local
+   ID: 001, Name: kali-linux, IP: any, Active
+
+List of agentless devices:
+
+=== MANAGER SYSCHECK CONFIGURATION ===
+  <syscheck>
+    <disabled>no</disabled>
+
+    <!-- Frequency that syscheck is executed default every 12 hours -->
+    <frequency>43200</frequency>
+
+    <scan_on_start>yes</scan_on_start>
+
+    <!-- Generate alert when new file detected -->
+    <alert_new_files>yes</alert_new_files>
+
+    <!-- Don't ignore files that change more than 'frequency' times -->
+    <auto_ignore frequency="10" timeframe="3600">no</auto_ignore>
+
+    <!-- Directories to check  (perform all possible verifications) -->
+    <directories>/etc,/usr/bin,/usr/sbin</directories>
+    <directories>/bin,/sbin,/boot</directories>
+
+    <!-- Files/directories to ignore -->
+    <ignore>/etc/mtab</ignore>
+    <ignore>/etc/hosts.deny</ignore>
+    <ignore>/etc/mail/statistics</ignore>
+    <ignore>/etc/random-seed</ignore>
+    <ignore>/etc/random.seed</ignore>
+    <ignore>/etc/adjtime</ignore>
+    <ignore>/etc/httpd/logs</ignore>
+    <ignore>/etc/utmpx</ignore>
+    <ignore>/etc/wtmpx</ignore>
+    <ignore>/etc/cups/certs</ignore>
+    <ignore>/etc/dumpdates</ignore>
+    <ignore>/etc/svc/volatile</ignore>
+
+    <!-- File types to ignore -->
+    <ignore type="sregex">.log$|.swp$</ignore>
+
+    <!-- Check the file, but never compute the diff -->
+    <nodiff>/etc/ssl/private.key</nodiff>
+
+    <skip_nfs>yes</skip_nfs>
+    <skip_dev>yes</skip_dev>
+    <skip_proc>yes</skip_proc>
+    <skip_sys>yes</skip_sys>
+
+    <!-- Nice value for Syscheck process -->
+    <process_priority>10</process_priority>
+
+    <!-- Maximum output throughput -->
+    <max_eps>50</max_eps>
+
+    <!-- Database synchronization settings -->
+    <synchronization>
+      <enabled>yes</enabled>
+      <interval>5m</interval>
+      <max_eps>10</max_eps>
+    </synchronization>
+  </syscheck>
+=== AVAILABLE SCA POLICIES ===
+cis_alma_linux_10.yml.disabled
+cis_alma_linux_8.yml.disabled
+cis_alma_linux_9.yml.disabled
+cis_amazon_linux_1.yml.disabled
+cis_amazon_linux_2023.yml.disabled
+cis_amazon_linux_2.yml.disabled
+cis_apache_24.yml.disabled
+cis_apple_macOS_10.11.yml.disabled
+cis_apple_macOS_10.12.yml.disabled
+cis_apple_macOS_10.13.yml.disabled
+cis_apple_macOS_10.14.yml.disabled
+cis_apple_macOS_10.15.yml.disabled
+cis_apple_macOS_11.1.yml.disabled
+cis_apple_macOS_12.0.yml.disabled
+cis_apple_macOS_13.x.yml.disabled
+cis_apple_macOS_14.x.yml.disabled
+cis_apple_macOS_15.x.yml.disabled
+cis_centos10_linux.yml.disabled
+cis_centos6_linux.yml.disabled
+cis_centos7_linux.yml.disabled
+cis_centos8_linux.yml.disabled
+cis_centos9_linux.yml.disabled
+cis_debian10.yml.disabled
+cis_debian11.yml.disabled
+cis_debian12.yml.disabled
+cis_debian13.yml.disabled
+cis_debian7.yml.disabled
+cis_debian8.yml.disabled
+cis_debian9.yml.disabled
+cis_iis_10.yml.disabled
+cis_mongodb_36.yml.disabled
+cis_mysql5-6_community.yml.disabled
+cis_mysql5-6_enterprise.yml.disabled
+cis_nginx_1.yml.disabled
+cis_oracle_database_19c.yml.disabled
+cis_oracle_linux_10.yml.disabled
+cis_oracle_linux_9.yml.disabled
+cis_postgre-sql-13.yml.disabled
+cis_rhel10_linux.yml.disabled
+cis_rhel5_linux.yml.disabled
+cis_rhel6_linux.yml.disabled
+cis_rhel7_linux.yml.disabled
+cis_rhel8_linux.yml.disabled
+cis_rhel9_linux.yml.disabled
+cis_rocky_linux_10.yml.disabled
+cis_rocky_linux_8.yml.disabled
+cis_rocky_linux_9.yml.disabled
+cis_sles11_linux.yml.disabled
+cis_sles12_linux.yml.disabled
+cis_sles15_linux.yml.disabled
+cis_solaris11.4.yml.disabled
+cis_solaris11.yml.disabled
+cis_sqlserver_2012.yml.disabled
+cis_sqlserver_2014.yml.disabled
+cis_sqlserver_2016.yml.disabled
+cis_sqlserver_2017.yml.disabled
+cis_sqlserver_2019.yml.disabled
+cis_ubuntu14-04.yml.disabled
+cis_ubuntu16-04.yml.disabled
+cis_ubuntu18-04.yml.disabled
+cis_ubuntu20-04.yml.disabled
+cis_ubuntu22-04.yml.disabled
+cis_ubuntu24-04.yml
+cis_win10_enterprise.yml.disabled
+cis_win11_enterprise.yml.disabled
+cis_win2012_non_r2.yml.disabled
+cis_win2012r2.yml.disabled
+cis_win2016.yml.disabled
+cis_win2019.yml.disabled
+cis_win2022.yml.disabled
+cis_win2025.yml.disabled
+sca_distro_independent_linux.yml.disabled
+web_vulnerabilities.yml.disabled

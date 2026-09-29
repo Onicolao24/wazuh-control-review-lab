@@ -1,0 +1,15 @@
+CONTROL=SCA
+CHECK_ID=35594
+BEFORE_RESULT=failed
+AFTER_RESULT=passed
+VERIFIED_PASSED=true
+CHANGE=/etc/crontab mode 0644 -> 0600; owner root:root unchanged
+  File: /etc/crontab
+  Size: 1136      	Blocks: 8          IO Block: 4096   regular file
+Device: 252,0	Inode: 2228555     Links: 1
+Access: (0600/-rw-------)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-09-29 01:35:24.416088630 +0000
+Modify: 2026-02-10 00:34:44.000000000 +0000
+Change: 2026-09-29 01:34:49.782532175 +0000
+ Birth: 2026-08-13 03:06:16.961363159 +0000
+active
